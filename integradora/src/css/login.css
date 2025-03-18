@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    background-color: #E5E5E5; /* Fondo gris claro */
+}
+
+/* Contenedor principal */
+.container {
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* Tarjeta de login */
+.card {
+    border: none;
+    background-color: #f8f9fa; /* Color de fondo ligeramente claro */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los inputs */
+.form-control {
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+/* Ajuste para el input con botón de visibilidad */
+.input-group .form-control {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.input-group .btn {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* Icono del ojo */
+.input-group .btn i {
+    font-size: 18px;
+}
+
+/* Botón de continuar */
+.btn-danger {
+    background-color: #9B1B30; /* Rojo oscuro */
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #7A1626; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Texto de etiquetas */
+.form-label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
