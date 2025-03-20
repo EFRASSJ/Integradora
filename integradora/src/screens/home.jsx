@@ -6,7 +6,6 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
 export default function Home() {
-  // Datos para la gráfica de barras
   const barData = {
     labels: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
     datasets: [
@@ -18,7 +17,6 @@ export default function Home() {
     ],
   };
 
-  // Datos para la gráfica de pastel
   const doughnutData = {
     labels: ["Día", "Noche"],
     datasets: [
@@ -31,7 +29,6 @@ export default function Home() {
 
   return (
     <div className="d-flex">
-      {/* Sidebar */}
       <div className="bg-danger text-white p-3" style={{ width: "250px", height: "100vh" }}>
         <h4 className="text-center">RESTAURANT</h4>
         <ul className="nav flex-column mt-3">
@@ -43,21 +40,16 @@ export default function Home() {
           <li className="nav-item p-2">Reseñas</li>
         </ul>
       </div>
-      
-      {/* Contenido Principal */}
       <div className="container-fluid p-4">
         <div className="d-flex justify-content-between">
           <h2>Panel de Administración</h2>
           <button className="btn btn-danger">📄 PDF</button>
         </div>
-        
         <div className="row mt-4">
-          {/* Gráfica de ventas */}
           <div className="col-md-8">
             <h5>Ventas</h5>
             <Bar data={barData} />
           </div>
-          {/* Info de ventas */}
           <div className="col-md-4">
             <h5>VENTAS TOTALES</h5>
             <h3>980</h3>
@@ -65,8 +57,6 @@ export default function Home() {
             <Doughnut data={doughnutData} />
           </div>
         </div>
-        
-        {/* Tabla de ingresos */}
         <div className="mt-4">
           <table className="table table-bordered text-center">
             <thead className="bg-danger text-white">

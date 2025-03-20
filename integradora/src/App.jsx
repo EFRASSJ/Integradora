@@ -1,15 +1,15 @@
-import Login from "./screens/login";
-import Home from "./screens/home";
-import Meseros from "./screens/meseros";
-import Mesas from "./screens/mesas";
-import Categorias from "./screens/categorias";
-import Productos from "./screens/productos";
-import Reseñas from "./screens/reseñas";
-import ReseñaMesero from "./screens/reseñamesero";
-import Opinion from "./screens/opinion";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./screens/Login";
+import Home from "./screens/Home";
 
-function App() {
-    return <Opinion />;
+export default function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/home" element={<Home />} />
+            </Routes>
+        </Router>
+    );
 }
-
-export default App;
